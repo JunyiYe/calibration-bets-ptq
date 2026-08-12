@@ -1,0 +1,413 @@
+{
+  "bits": 4,
+  "checkpoint": "outputs/sweep/dlinear_fold2024_seed2_model.pt",
+  "config": "configs/dlinear.yaml",
+  "fp32_ic_mean": -0.01449986912214632,
+  "full_delta": {
+    "delta_ic_mean": 0.0078867029552456,
+    "ic_mean": -0.022386572077391916,
+    "n_days": 252.0,
+    "pvalue": 0.3830927853272247,
+    "se": 0.00902632996346177,
+    "tstat": 0.8737441448706911
+  },
+  "layers": {
+    "model.Linear_Seasonal.0": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.019983989085783423,
+        "ic_mean": -0.03448385820792974,
+        "n_days": 252.0,
+        "pvalue": 9.462762054387867e-09,
+        "se": 0.0033643320907152767,
+        "tstat": 5.939957336831962
+      },
+      "only_one": {
+        "delta_ic_mean": -0.0031494103359509555,
+        "ic_mean": -0.011350458786195372,
+        "n_days": 252.0,
+        "pvalue": 0.7205989245534842,
+        "se": 0.008795747573895698,
+        "tstat": -0.3580605638681443
+      }
+    },
+    "model.Linear_Seasonal.1": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Seasonal.10": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Seasonal.2": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Seasonal.3": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Seasonal.4": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Seasonal.5": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Seasonal.6": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Seasonal.7": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Seasonal.8": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Seasonal.9": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Trend.0": {
+      "leave_one_out": {
+        "delta_ic_mean": -0.0031494103359509555,
+        "ic_mean": -0.011350458786195372,
+        "n_days": 252.0,
+        "pvalue": 0.7205989245534842,
+        "se": 0.008795747573895698,
+        "tstat": -0.3580605638681443
+      },
+      "only_one": {
+        "delta_ic_mean": 0.019983989085783423,
+        "ic_mean": -0.03448385820792974,
+        "n_days": 252.0,
+        "pvalue": 9.462762054387867e-09,
+        "se": 0.0033643320907152767,
+        "tstat": 5.939957336831962
+      }
+    },
+    "model.Linear_Trend.1": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Trend.10": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Trend.2": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Trend.3": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Trend.4": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Trend.5": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Trend.6": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Trend.7": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Trend.8": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    },
+    "model.Linear_Trend.9": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.0078867029552456,
+        "ic_mean": -0.022386572077391916,
+        "n_days": 252.0,
+        "pvalue": 0.3830927853272247,
+        "se": 0.00902632996346177,
+        "tstat": 0.8737441448706911
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0,
+        "ic_mean": -0.01449986912214632,
+        "n_days": 252.0,
+        "pvalue": 1.0,
+        "se": 0.0,
+        "tstat": 0.0
+      }
+    }
+  },
+  "policy": "random"
+}

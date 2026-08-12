@@ -1,0 +1,77 @@
+seed: 7
+data:
+  kind: csv_panel
+  path: data/sp500_returns.csv
+  date_col: date
+  asset_col: symbol
+  value_col: return
+  min_history: 1000
+  train_end: '2022-12-31'
+  val_end: '2023-12-31'
+  test_end: '2025-12-31'
+task:
+  context_length: 64
+  horizon: 1
+  forward_period: 5
+  target: realized_vol_fwd5d
+  target_agg: realized_vol
+  target_log: true
+  normalize: zscore
+  target_transform: cross_sectional_zscore
+  target_clip: -3,3
+  feature_columns:
+  - value
+  - ret_ma5
+  - ret_ma10
+  - ret_ma20
+  - vol_20
+  - rsi_14
+  - macd
+  - macd_signal
+  - max_20
+  - min_20
+  - skew_20
+model:
+  name: timemixer
+  d_model: 16
+  n_heads: 4
+  n_layers: 2
+  dropout: 0.1
+  moving_avg: 25
+  down_sampling_method: avg
+  down_sampling_window: 2
+  down_sampling_layers: 2
+  use_norm: 1
+  channel_independence: false
+  d_ff: 64
+train:
+  batch_size: 1024
+  epochs: 300
+  lr: 0.0005
+  weight_decay: 0.01
+  patience: 20
+  log_every: 1
+  device: auto
+ptq:
+  enabled: true
+  methods:
+  - fp32
+  - dynamic_int8
+  - static_int8
+  - static_int4
+  - rtn_w4
+  calibration:
+    policies:
+    - random
+    - recent
+    - volatility_stratified
+    num_windows: 1024
+    volatility_window: 20
+evaluation:
+  portfolio:
+    enabled: false
+    top_quantile: 0.1
+    bottom_quantile: 0.1
+    transaction_cost_bps: 5
+  regimes:
+    volatility_deciles: 10

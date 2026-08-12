@@ -1,0 +1,7 @@
+# Paper runs used torch 2.4.0 + CUDA 12.4; any torch >= 2.0 with GPU support works.
+torch>=2.0
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+pyyaml>=6.0
+yfinance>=0.2

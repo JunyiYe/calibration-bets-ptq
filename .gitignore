@@ -1,0 +1,8 @@
+__pycache__/
+*.egg-info/
+*.pyc
+outputs/*
+!outputs/.gitkeep
+data/*
+!data/.gitkeep
+!data/sp500_returns.csv

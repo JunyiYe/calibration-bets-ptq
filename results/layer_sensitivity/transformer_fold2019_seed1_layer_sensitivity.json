@@ -1,0 +1,269 @@
+{
+  "bits": 4,
+  "checkpoint": "outputs/sweep/transformer_fold2019_seed1_model.pt",
+  "config": "configs/transformer.yaml",
+  "fp32_ic_mean": 0.47652499949953764,
+  "full_delta": {
+    "delta_ic_mean": 0.15600119058707487,
+    "ic_mean": 0.3205238089124627,
+    "n_days": 252.0,
+    "pvalue": 6.61671965378408e-70,
+    "se": 0.006253814485970923,
+    "tstat": 24.944966138191294
+  },
+  "layers": {
+    "model.enc_embedding.value_embedding.tokenConv": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.022071275186717924,
+        "ic_mean": 0.45445372431281966,
+        "n_days": 252.0,
+        "pvalue": 4.757889727446569e-10,
+        "se": 0.003404923127824323,
+        "tstat": 6.482165487483714
+      },
+      "only_one": {
+        "delta_ic_mean": 0.13444730026398757,
+        "ic_mean": 0.34207769923555004,
+        "n_days": 252.0,
+        "pvalue": 5.350545294984194e-60,
+        "se": 0.006153705391820431,
+        "tstat": 21.848186044573456
+      }
+    },
+    "model.encoder.attn_layers.0.attention.key_projection": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.15890161908780037,
+        "ic_mean": 0.3176233804117372,
+        "n_days": 252.0,
+        "pvalue": 9.39014795184998e-72,
+        "se": 0.006221544376777354,
+        "tstat": 25.540542583111574
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0012714627268804546,
+        "ic_mean": 0.4752535367726572,
+        "n_days": 252.0,
+        "pvalue": 0.006599681734322613,
+        "se": 0.0004641656050565853,
+        "tstat": 2.739243737642848
+      }
+    },
+    "model.encoder.attn_layers.0.attention.out_projection": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.11881256025101508,
+        "ic_mean": 0.35771243924852253,
+        "n_days": 252.0,
+        "pvalue": 9.02746196749151e-59,
+        "se": 0.005532684384690545,
+        "tstat": 21.47466798933634
+      },
+      "only_one": {
+        "delta_ic_mean": 0.018966350730894335,
+        "ic_mean": 0.4575586487686432,
+        "n_days": 252.0,
+        "pvalue": 2.11812422913515e-07,
+        "se": 0.003554076527690694,
+        "tstat": 5.336506004618297
+      }
+    },
+    "model.encoder.attn_layers.0.attention.query_projection": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.1427249223456015,
+        "ic_mean": 0.33380007715393606,
+        "n_days": 252.0,
+        "pvalue": 1.1445441515600145e-69,
+        "se": 0.005739136870554488,
+        "tstat": 24.868708581925162
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0020580125197034245,
+        "ic_mean": 0.47446698697983414,
+        "n_days": 252.0,
+        "pvalue": 4.7593445206177025e-07,
+        "se": 0.0003979875896785285,
+        "tstat": 5.17104696999665
+      }
+    },
+    "model.encoder.attn_layers.0.attention.value_projection": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.28479567705150516,
+        "ic_mean": 0.19172932244803242,
+        "n_days": 252.0,
+        "pvalue": 6.014945181095333e-62,
+        "se": 0.012688234227821803,
+        "tstat": 22.445650981680863
+      },
+      "only_one": {
+        "delta_ic_mean": -0.00012584808244978866,
+        "ic_mean": 0.4766508475819874,
+        "n_days": 252.0,
+        "pvalue": 0.8863479054018791,
+        "se": 0.0008796120753451006,
+        "tstat": -0.14307225420980532
+      }
+    },
+    "model.encoder.attn_layers.0.conv1": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.15889504674718674,
+        "ic_mean": 0.3176299527523509,
+        "n_days": 252.0,
+        "pvalue": 1.2253564175927497e-69,
+        "se": 0.006391794977373599,
+        "tstat": 24.85922144087247
+      },
+      "only_one": {
+        "delta_ic_mean": -0.0006589440952587162,
+        "ic_mean": 0.47718394359479627,
+        "n_days": 252.0,
+        "pvalue": 0.00023436116119110345,
+        "se": 0.00017653190524699085,
+        "tstat": -3.732719557616334
+      }
+    },
+    "model.encoder.attn_layers.0.conv2": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.14934998405145167,
+        "ic_mean": 0.32717501544808597,
+        "n_days": 252.0,
+        "pvalue": 1.1561348592161247e-66,
+        "se": 0.006245188961269369,
+        "tstat": 23.9144059495512
+      },
+      "only_one": {
+        "delta_ic_mean": 0.004395680181936907,
+        "ic_mean": 0.4721293193176007,
+        "n_days": 252.0,
+        "pvalue": 2.23322781332074e-22,
+        "se": 0.0004093940809165013,
+        "tstat": 10.737038923709882
+      }
+    },
+    "model.encoder.attn_layers.1.attention.key_projection": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.15391270314041886,
+        "ic_mean": 0.3226122963591187,
+        "n_days": 252.0,
+        "pvalue": 1.7213257668444174e-69,
+        "se": 0.006203159765707487,
+        "tstat": 24.81198436823829
+      },
+      "only_one": {
+        "delta_ic_mean": -0.00017892423755068245,
+        "ic_mean": 0.47670392373708825,
+        "n_days": 252.0,
+        "pvalue": 9.50578538695039e-05,
+        "se": 4.510440339565041e-05,
+        "tstat": -3.966890682073334
+      }
+    },
+    "model.encoder.attn_layers.1.attention.out_projection": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.15475938242595466,
+        "ic_mean": 0.3217656170735829,
+        "n_days": 252.0,
+        "pvalue": 2.8928812301769326e-69,
+        "se": 0.006255456865367352,
+        "tstat": 24.739900818877505
+      },
+      "only_one": {
+        "delta_ic_mean": 0.0015652299741991992,
+        "ic_mean": 0.47495976952533836,
+        "n_days": 252.0,
+        "pvalue": 1.6697633258049686e-06,
+        "se": 0.0003190180859181397,
+        "tstat": 4.906398863545431
+      }
+    },
+    "model.encoder.attn_layers.1.attention.query_projection": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.15667860320776994,
+        "ic_mean": 0.31984639629176764,
+        "n_days": 252.0,
+        "pvalue": 1.9360157254893362e-70,
+        "se": 0.006238111606816012,
+        "tstat": 25.116351402975315
+      },
+      "only_one": {
+        "delta_ic_mean": 0.00031061838650243447,
+        "ic_mean": 0.4762143811130352,
+        "n_days": 252.0,
+        "pvalue": 0.001293003800690535,
+        "se": 9.544897735223907e-05,
+        "tstat": 3.254287213116463
+      }
+    },
+    "model.encoder.attn_layers.1.attention.value_projection": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.1551725950703398,
+        "ic_mean": 0.32135240442919777,
+        "n_days": 252.0,
+        "pvalue": 2.558450429186281e-70,
+        "se": 0.006187738824714792,
+        "tstat": 25.07743126625777
+      },
+      "only_one": {
+        "delta_ic_mean": -0.00045446860453653213,
+        "ic_mean": 0.47697946810407404,
+        "n_days": 252.0,
+        "pvalue": 6.093582592960821e-06,
+        "se": 9.833520535534384e-05,
+        "tstat": -4.621626638132962
+      }
+    },
+    "model.encoder.attn_layers.1.conv1": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.1565298222234804,
+        "ic_mean": 0.31999517727605714,
+        "n_days": 252.0,
+        "pvalue": 6.263946334614699e-70,
+        "se": 0.006273087663687093,
+        "tstat": 24.95259601257953
+      },
+      "only_one": {
+        "delta_ic_mean": 3.999374535750837e-05,
+        "ic_mean": 0.4764850057541801,
+        "n_days": 252.0,
+        "pvalue": 0.09910290688213781,
+        "se": 2.416027051963857e-05,
+        "tstat": 1.6553517198824255
+      }
+    },
+    "model.encoder.attn_layers.1.conv2": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.1553061643206173,
+        "ic_mean": 0.3212188351789203,
+        "n_days": 252.0,
+        "pvalue": 3.803468590627937e-70,
+        "se": 0.00620675541376378,
+        "tstat": 25.022117671371163
+      },
+      "only_one": {
+        "delta_ic_mean": -0.0003749002107355008,
+        "ic_mean": 0.4768998997102731,
+        "n_days": 252.0,
+        "pvalue": 0.008403508590435744,
+        "se": 0.00014112964725390622,
+        "tstat": -2.656424203066406
+      }
+    },
+    "model.projection": {
+      "leave_one_out": {
+        "delta_ic_mean": 0.15234491254244556,
+        "ic_mean": 0.32418008695709205,
+        "n_days": 252.0,
+        "pvalue": 1.7498356581275047e-68,
+        "se": 0.006220526464270409,
+        "tstat": 24.490678307935426
+      },
+      "only_one": {
+        "delta_ic_mean": 0.006111907793232813,
+        "ic_mean": 0.4704130917063048,
+        "n_days": 252.0,
+        "pvalue": 1.431511678252024e-33,
+        "se": 0.00043414181532043495,
+        "tstat": 14.078136630818864
+      }
+    }
+  },
+  "policy": "random"
+}
