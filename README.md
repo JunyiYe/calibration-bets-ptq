@@ -2,7 +2,7 @@
 
 Code to reproduce the experiments of *"Calibration Bets on the Past:
 Post-Training Quantization for Financial Time-Series Forecasting"* (ICAIF '26,
-under review): a systematic study of activation calibration for post-training
+accepted): a systematic study of activation calibration for post-training
 quantization (PTQ) in cross-sectional volatility forecasting on the S&P 500,
 covering seven architectures, eight walk-forward test years (2018-2025), and
 560 trained models.
@@ -46,9 +46,10 @@ pip install -e .
 
 ## Running the experiments
 
-`bash reproduce.sh` runs the full pipeline sequentially. On a cluster you will
-want to parallelize step 2 (one job per architecture). Every step is
-resumable: existing checkpoints are reused and finished cells are skipped.
+`bash reproduce.sh` runs steps 1–4 sequentially. On a cluster,
+step 2 can be parallelized with one job per architecture.
+Training skips completed cells; the percentile-rescue pass
+reuses checkpoints but reruns its evaluations.
 
 **1. Data.** The exact panel used in the paper ships with the repo:
 `data/sp500_returns.csv` — daily simple returns from Yahoo Finance
