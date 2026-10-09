@@ -14,6 +14,9 @@ W4A4), re-evaluate W4A4 with percentile-calibrated activation ranges, and
 compare against HAR / persistence baselines. Forecast skill is the daily
 cross-sectional information coefficient (IC); quantization damage is the
 paired difference IC(fp32) - IC(quantized) on identical stocks and dates.
+Static W8A8, W4, and W4A4 use fake quantization with FP32
+computation to measure predictive damage. These evaluations
+do not measure low-precision hardware speed, memory, or energy savings.
 
 ## Layout
 
