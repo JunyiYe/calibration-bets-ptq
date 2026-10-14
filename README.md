@@ -58,6 +58,8 @@ reuses checkpoints but reruns its evaluations.
 `data/sp500_returns.csv` — daily simple returns from Yahoo Finance
 adjusted closes for the 501 current S&P 500 constituents, June 2008 -
 December 2025 (~2.1M asset-days). Nothing to run.
+The panel is derived from Yahoo Finance data and is provided for research
+reproducibility only; the underlying prices remain subject to Yahoo's terms.
 
 To rebuild it from scratch instead (note: Yahoo Finance data can change over
 time — delistings, adjustment revisions — so a fresh download may differ
