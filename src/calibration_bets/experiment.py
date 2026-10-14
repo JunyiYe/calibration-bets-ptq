@@ -140,9 +140,3 @@ def build_calibration_loader(
         inputs=val_ds.x,
     )
     return DataLoader(Subset(val_ds, indices.tolist()), batch_size=batch_size, shuffle=False, drop_last=False)
-
-
-def checkpoint_path_for(config_path: str) -> str:
-    from pathlib import Path
-
-    return str(Path("outputs") / f"{Path(config_path).stem}_model.pt")

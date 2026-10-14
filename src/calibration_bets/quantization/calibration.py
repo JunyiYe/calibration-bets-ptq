@@ -124,7 +124,3 @@ def input_window_volatility(inputs: np.ndarray | None, window: int) -> np.ndarra
     x = x.reshape(len(x), -1)
     lookback = min(max(1, window), x.shape[1])
     return np.mean(np.abs(x[:, -lookback:]), axis=1)
-
-
-def rolling_abs_mean(values: np.ndarray, window: int) -> np.ndarray:
-    return pd.Series(np.abs(values)).rolling(window=window, min_periods=1).mean().to_numpy()

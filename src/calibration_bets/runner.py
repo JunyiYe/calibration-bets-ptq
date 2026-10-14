@@ -20,8 +20,8 @@ from calibration_bets.metrics.regime import summarize_by_abs_return_decile
 from calibration_bets.metrics.significance import daily_ic_frame
 from calibration_bets.models.factory import build_model
 from calibration_bets.quantization.calibration import summarize_calibration_policies
-from calibration_bets.quantization.noise import count_perturbed_parameters
 from calibration_bets.quantization.ptq import quantize_model
+from calibration_bets.quantization.rtn import count_perturbed_parameters
 from calibration_bets.training.loop import TrainConfig, TrainResult, predict, train_model
 from calibration_bets.utils.device import resolve_device
 from calibration_bets.utils.seed import set_seed
@@ -153,7 +153,7 @@ def run_experiment(
     print(f"[OK] Wrote metrics to {output}")
 
     # persist per-method test predictions so downstream analyses (paired
-    # significance tests, noise-equivalence, plots) never need re-inference
+    # significance tests, plots) never need re-inference
     preds_path = output_dir / f"{label}_preds.npz"
     save_predictions(preds_path, test_ds, method_preds)
     print(f"[OK] Wrote predictions to {preds_path}")

@@ -82,7 +82,6 @@ def make_windows(
     metas: list[dict[str, object]] = []
 
     feat_cols = list(config.feature_columns)
-    target_col = feat_cols[0]  # always use the first feature column as the target
 
     for asset, g in df.sort_values(["asset", "date"]).groupby("asset", sort=False):
         arr = g[feat_cols].to_numpy(dtype=np.float32)

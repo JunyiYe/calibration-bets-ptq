@@ -389,3 +389,29 @@ def fake_quantize_weight_per_channel(weight: torch.Tensor, qmax: float) -> torch
 def make_scale(amax: torch.Tensor, qmax: float) -> torch.Tensor:
     eps = torch.finfo(torch.float32).eps
     return torch.clamp(amax.float() / qmax, min=eps)
+
+
+def count_perturbed_parameters(model: nn.Module) -> dict[str, int | float]:
+    """Report how many modules/weights the weight-quantization path touches."""
+    n_modules = 0
+    n_weights = 0
+    for name, module in model.named_modules():
+        if isinstance(module, nn.GRU):
+            n_modules += 1
+            n_weights += sum(p.numel() for pn, p in module.named_parameters() if pn.startswith("weight_"))
+            continue
+        is_target = (
+            isinstance(module, nn.Linear) and should_replace_linear(name, module)
+        ) or isinstance(module, nn.Conv1d)
+        if is_target:
+            n_modules += 1
+            n_weights += module.weight.numel()
+    # trainable only: fixed sinusoid embeddings (requires_grad=False) are not
+    # part of the learned model and would deflate the coverage ratio
+    total = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    return {
+        "perturbed_modules": n_modules,
+        "perturbed_weights": n_weights,
+        "total_parameters": total,
+        "weight_coverage": n_weights / total if total else 0.0,
+    }

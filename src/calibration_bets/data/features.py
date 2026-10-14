@@ -118,9 +118,3 @@ def normalize_panel(
                 continue  # don't clip value — it's used as the target source
             df[col] = df[col].clip(low, high)
     return df
-
-
-DEFAULT_FEATURE_COLUMNS = [
-    "value", "ret_ma5", "ret_ma10", "ret_ma20", "vol_20", "rsi_14",
-    "macd", "macd_signal", "max_20", "min_20", "skew_20",
-]
