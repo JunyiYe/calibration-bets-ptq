@@ -1,6 +1,6 @@
 """Shared experiment assembly: config -> window datasets and calibration loaders.
 
-Every script (training, significance tests, noise/quantization analyses) must
+Every script (training, PTQ evaluation, rescue pass, baselines) must
 see identical windows; this module is the single place that turns a config
 into datasets so the pipelines cannot drift apart.
 """
@@ -83,8 +83,8 @@ def build_datasets(
         stats = compute_panel_stats(train_df, list(feat_cols))
         panel = normalize_panel(panel, stats, list(feat_cols))
 
-    # with derived features: normalization is done at panel level (if enabled);
-    # without: original per-window normalization behavior
+    # multi-feature inputs are normalized at panel level above; a single
+    # feature falls back to per-window normalization
     use_per_window = len(feat_cols) == 1 and panel_norm != "none"
     window_cfg = WindowConfig(
         context_length=int(task_cfg["context_length"]),
