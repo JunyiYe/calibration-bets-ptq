@@ -9,6 +9,7 @@ description = "Post-training quantization of financial time-series forecasters"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+  "torch>=2.0",
   "numpy>=1.24",
   "pandas>=2.0",
   "scipy>=1.10",
