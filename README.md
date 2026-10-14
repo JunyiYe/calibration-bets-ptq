@@ -40,6 +40,15 @@ What we find:
 So activation calibration should be treated as a deployment decision. When
 damage remains, 8-bit activations or weight-only 4-bit are the safer choices.
 
+## The range-resolution trade-off
+
+![Narrow versus wide activation range at 4 bits: a narrow range gives finer resolution but clips the tails, a wide range avoids clipping but spaces the 15 levels coarsely](paper/framework.png)
+
+At 4 bits a quantizer has only 15 levels to cover an activation's whole range
+[-A, A]. A narrow range gives finer steps but clips the tails; a wide range
+(abs-max) avoids clipping but spaces the levels coarsely. Choosing A from
+historical data and then freezing it is the calibration decision the paper studies.
+
 ## Quick start
 
 ```bash
