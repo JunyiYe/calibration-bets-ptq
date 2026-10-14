@@ -42,7 +42,9 @@ damage remains, 8-bit activations or weight-only 4-bit are the safer choices.
 
 ## The range-resolution trade-off
 
-![Narrow versus wide activation range at 4 bits: a narrow range gives finer resolution but clips the tails, a wide range avoids clipping but spaces the 15 levels coarsely](paper/framework.png)
+<p align="center">
+  <img src="paper/framework.png" alt="Narrow versus wide activation range at 4 bits: a narrow range gives finer resolution but clips the tails, a wide range avoids clipping but spaces the 15 levels coarsely" width="520">
+</p>
 
 At 4 bits a quantizer has only 15 levels to cover an activation's whole range
 [-A, A]. A narrow range gives finer steps but clips the tails; a wide range
