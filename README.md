@@ -150,4 +150,4 @@ If you find this repo useful, please consider giving it a star ⭐ and citing th
 ## License
 
 MIT (see LICENSE). Raw price data derive from Yahoo Finance and are provided
-for research reproducibility only.
+for research reproducibility only. The paper PDF is CC BY 4.0.
