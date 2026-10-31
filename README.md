@@ -1,7 +1,7 @@
 # Calibration Bets on the Past
 
 **Post-Training Quantization for Financial Time-Series Forecasting**
-Junyi Ye, Ivy Gateri Wanjiku · accepted to ICAIF '26 · [paper PDF](paper/Calibration-Bets_ICAIF26.pdf)
+Junyi Ye, Ivy Gateri Wanjiku · accepted to ICAIF '26 · [paper PDF](paper/Calibration-Bets_ICAIF26.pdf) · [doi:10.1145/3858063.3858796](https://doi.org/10.1145/3858063.3858796)
 
 This repo contains the code and data behind the paper. It studies how to
 quantize trained volatility forecasters to low precision without retraining,
@@ -133,12 +133,17 @@ pseudo-fold (train 2009-2015, validate 2016), then frozen.
 
 ## Citation
 
+If you find this repo useful, please consider giving it a star ⭐ and citing the paper:
+
 ```bibtex
 @inproceedings{ye2026calibration,
   title     = {Calibration Bets on the Past: Post-Training Quantization for Financial Time-Series Forecasting},
   author    = {Ye, Junyi and Wanjiku, Ivy Gateri},
   booktitle = {Proceedings of the 7th ACM International Conference on AI in Finance (ICAIF '26)},
-  year      = {2026}
+  year      = {2026},
+  address   = {Milan, Italy},
+  publisher = {ACM},
+  doi       = {10.1145/3858063.3858796}
 }
 ```
 
