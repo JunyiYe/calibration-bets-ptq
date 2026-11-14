@@ -141,9 +141,11 @@ If you find this repo useful, please consider giving it a star ⭐ and citing th
   author    = {Ye, Junyi and Wanjiku, Ivy Gateri},
   booktitle = {Proceedings of the 7th ACM International Conference on AI in Finance (ICAIF '26)},
   year      = {2026},
+  pages     = {1679--1686},
   address   = {Milan, Italy},
   publisher = {ACM},
-  doi       = {10.1145/3858063.3858796}
+  doi       = {10.1145/3858063.3858796},
+  url       = {https://doi.org/10.1145/3858063.3858796}
 }
 ```
 
